@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>bazzardd.com registration</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style1.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('images/banner-bg.png');">
+			<div class="inner bg-dark">
+				<div class="image-holder" style="display: flex;justify-content: center;flex-basis: auto;align-self: center;">
+					<img src="images/banner-bg.jpg" width="100%" alt="">
+				</div>
+				<form action="" style="overflow: auto;">
+					<h3>Formulaire d'inscription </h3>
+                    
+					<div class="form-group">
+						<input type="text" placeholder="Nom" class="form-control">
+						<input type="text" placeholder="Prénom" class="form-control">
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Pseudo" class="form-control">
+						<i class="zmdi zmdi-account"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="email" placeholder="Addresse mail" class="form-control">
+						<i class="zmdi zmdi-email"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Contact" class="form-control">
+						<i class="zmdi zmdi-phone"></i>
+					</div>
+                    <div class="form-wrapper">
+                        <div class="label-flex" style="display: flex; padding: 2px; margin-bottom: 5px;">
+                            <label for="payment" style="flex: 1 ;">Méthode de payement</label>
+                            <a href="#" class="form-link" style="flex: 1 ; text-decoration: none ;cursor: pointer;color: green; ">(Payment Detail)</a>
+                        </div>
+                        <div class="form-radio-group" style="display: flex; flex-direction: row;justify-content: space-between;">            
+                            <div class="form-radio-item">
+                                <input type="radio" name="payment" id="cash" checked>
+                                <label for="cash">Cash</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="payment" id="cheque">
+                                <label for="cheque">Cheque</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="payment" id="demand">
+                                <label for="demand">Demand Draf</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <input type="text" name="chequeno" placeholder="DD / Cheque No." id="chequeno" class="form-control" />
+                            <i class="zmdi zmdi-cogs"></i>
+                        </div>
+                        <div class="form-wrapper">
+                            <input type="text" name="blank_name" placeholder="Drawn on ( Bank Name)" id="blank_name" class="form-control" />
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="payable"></label>
+                            <input type="text" name="payable" placeholder="Payable at" id="payable" class="form-control" />
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="payable"></label>
+                            <input type="text" name="payable" placeholder="Bank name" id="payable" class="form-control" />
+                        </div>
+                    </div>
+                    
+					<div class="form-wrapper">
+						<input type="text" placeholder="Nom de Compagnie" class="form-control">
+						<i class="zmdi zmdi-home"></i>
+					</div>
+					<div class="form-wrapper">
+						<select name="" id="" class="form-control">
+							<option value="" disabled selected>Genre</option>
+							<option value="male">Male</option>
+							<option value="femal">Female</option>
+							<option value="other">Autre</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" placeholder="Mot de passe" class="form-control">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" placeholder="Confirmer mot de passe" class="form-control">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<button>Envoyer
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

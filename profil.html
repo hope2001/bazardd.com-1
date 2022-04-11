@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>bazardd.com User front</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+      <!--  -->
+      <style>
+          .bg-custom-1 {
+  background-color: #85144b;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+body {
+/*font-family: ‘Varela Round’, sans-serif;*/
+}
+.modal-login {
+color: #636363;
+width: 350px;
+}
+.modal-login .modal-content {
+padding: 20px;
+border-radius: 5px;
+border: none;
+}
+.modal-login .modal-header {
+border-bottom: none;
+position: relative;
+justify-content: center;
+}
+.modal-login h4 {
+text-align: center;
+font-size: 26px;
+margin: 30px 0 -15px;
+}
+.modal-login .form-control:focus {
+border-color: #70c5c0;
+}
+.modal-login .form-control, .modal-login .btn {
+min-height: 40px;
+border-radius: 3px;
+}
+.modal-login .close {
+position: absolute;
+top: -5px;
+right: -5px;
+}
+.modal-login .modal-footer {
+background: #ecf0f1;
+border-color: #dee4e7;
+text-align: center;
+justify-content: center;
+margin: 0 -20px -20px;
+border-radius: 5px;
+font-size: 13px;
+}
+.modal-login .modal-footer a {
+color: #999;
+}
+.modal-login .avatar {
+position: absolute;
+margin: 0 auto;
+left: 0;
+right: 0;
+top: -70px;
+width: 95px;
+height: 95px;
+border-radius: 50%;
+z-index: 9;
+padding: 15px;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-login .avatar img {
+width: 100%;
+}
+.modal-login.modal-dialog {
+margin-top: 80px;
+}
+.modal-login .btn {
+color: #fff;
+border-radius: 4px;
+background: #FE4321;
+text-decoration: none;
+transition: all 0.4s;
+line-height: normal;
+border: none;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+background: #FE4321;
+outline: none;
+}
+.trigger-btn {
+display: inline-block;
+margin: 100px auto;
+color:#FE4321;
+font-size:30px;
+}
+.btcad:hover{
+border: 1px solid rgb(255, 208, 0);
+box-sizing: border-box;
+}
+      </style>
+      <!-- owl stylesheets -->
+      <link rel="stylesheet" href="css/card-item.css">
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/cart-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+
+  <!-- Close Top Nav -->
+      <!-- banner bg main start -->
+      <div class="banner_bg_main pb-5">
+        
+         <!-- logo section start -->
+         <div class="logo_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="logo"><a href="index.html"><img src="images/lobon.PNG"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- logo section end -->
+         <!-- header section start -->
+         <div class="header_section">
+            <div class="container">
+               <div class="containt_main">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="index.html"> <i class="fa fa-home pr-2"></i> Home</a>
+                     <a href="notif.html"> <i class="fa fa-bell pr-2"></i>Notifications</a>
+                     <a href="search.html"> <i class="fa fa-search pr-2"></i>Mes Recherches</a>
+                     <a href="favs.html"><i class="fa fa-heart pr-2"></i>Favoris</a>
+                     <a href="messages.html"><i class="fa fa-inbox pr-2"></i>Messages</a>
+                     <a href="login.html"><i class="fa fa-user-circle pr-2"></i>Se Connecter</a>
+                     <a href="depot-ann.html"> <i class="fa fa-upload pr-2"></i>Déposer une annonce</a>
+             
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+                  <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Toutes les catégories
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                  </div>
+                  <div class="main">
+                     <!-- Another variation with a button -->
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Recherchez quelque chose">
+                        <div class="input-group-append">
+                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                           <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header_box">
+                     <div class="lang_box ">
+                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true" >
+                           <img src="images/flag-france.png" class="mr-2" alt="flag">
+                           Français
+                           </a>
+                        
+                        <div class="dropdown-menu ">
+                           <a href="#" class="dropdown-item" >
+                              <img src="images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                              </a>
+                           
+                        </div>
+                     </div>
+                     <div class="login_menu">
+                        <ul>
+                           <li><a href="./details.html">
+                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              <span class="padding_10">Votre panier</span></a>
+                           </li>
+                           <li><a href="profil.html">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <span class="padding_10">Profil</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header section end -->
+       
+      </div>
+      <div class="" style="clear: both; "></div>
+     
+<section class="container">
+    
+    <div class="row p-2 rounded d-flex justify-content-between">
+      <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle border border-secondary">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item trigger-bt" data-toggle="modal" href="#myModal">Changer photo</a>
+        <a class="dropdown-item" href="#">Dashboard</a>
+        <a class="dropdown-item" href="ediprof.html">Edit Profile</a>
+        <a class="dropdown-item" href="login.html">Log Out</a>
+      </div>  
+<a href="monprofpub.html" class="btn btn-outline-secondary align-self-center"> Voir votre profil public</a >
+          
+
+    </div>
+    <hr class="bg-dark pt-1 rounded">
+    
+    <div class="row justify-content-center px-0 d-flex" style="box-sizing:border-box;">
+      <a href="anndepo.html" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+        <span class="d-flex flex-column btn btcad p-3 my-1 shadow">
+        <div class="d-flex  px-4">
+           <i class="fa fa-sun-o fa-3x"></i>
+       </div>
+       <div class="d-flex  flex-column">
+           <h4 class="px-2">Annonces déposées</h4>
+           <p class="d-flex text-wrap">Lorem ipsum dolor sit amet consectet.</p>
+       </div></span>
+   </a>  
+   <a href="transaction.html" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+    <span class="d-flex flex-column btn btcad p-3 my-1 shadow">
+    <div class="d-flex  px-4">
+       <i class="fa fa-money fa-3x"></i>
+   </div>
+   <div class="d-flex  flex-column">
+       <h4 class="px-2">Transactions</h4>
+       <p class="d-flex text-wrap">Suivre mes achats et mes ventes.</p>
+   </div></span>
+</a> 
+ <a href="reservation.html" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+  <span class="d-flex flex-column btn btcad p-3 my-1 shadow">
+  <div class="d-flex  px-4">
+     <i class="fa fa-umbrella fa-3x"></i>
+ </div>
+ <div class="d-flex  flex-column">
+     <h4 class="px-2">Réservations de vacances</h4>
+     <p class="d-flex text-wrap">Retrouver vos reservation en tant qu"hôte et voyageur.</p>
+ </div></span>
+</a>  <a href="ediprof.html" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+  <span class="d-flex flex-column btn btcad p-3 my-1 shadow">
+  <div class="d-flex  px-4">
+     <i class="fa fa-users fa-2x"></i>
+ </div>
+ <div class="d-flex  flex-column">
+     <h4 class="px-2">profil </h4>
+     <p class="d-flex w-100">
+      Modifier mon profil public, accéder à mes <br> recommandations et à l’espace candidat.</p>
+ </div></span>
+</a>  <a href="settings.html" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+  <span class="d-flex flex-column btn btcad p-3 my-1 shadow">
+  <div class="d-flex  px-4">
+     <i class="fa fa-cogs fa-2x"></i>
+ </div>
+ <div class="d-flex  flex-column justify-content-between">
+     <h4 class="px-2">Paramètres</h4>
+     <p class="d-flex text-wrap px-2 mx-auto w-75">Compléter et modifier mes informations <br> privées et préférences.</p>
+ </div></span>
+</a>  <a href="#" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+  <span class="d-flex flex-column btn btcad p-3 my-1 shadow">
+  <div class="d-flex  px-4">
+     <i class="fa fa-home fa-3x"></i>
+ </div>
+ <div class="d-flex  flex-column">
+     <h4 class="px-2">Connexion et sécurité</h4>
+     <p class="d-flex text-wrap">Protéger mon compte et mettre à jour <br>mon mot de passe.</p>
+ </div></span>
+</a>
+
+<a href="achat_credit.html" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+  <span class="d-flex flex-row btn btcad p-3 my-1 shadow">
+  <div class="d-flex  px-4">
+     <i class="fas fa-coins fa-2x"></i>
+ </div>
+ <div class="d-flex  flex-column">
+     <h4 class="px-2">Acheter à crédit</h4>
+ </div></span>
+</a>
+
+<a href="#" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+  <span class="d-flex flex-row btn btcad p-3 my-1 shadow">
+  <div class="d-flex  px-4">
+     <i class="fa fa-question-circle fa-2x"></i>
+ </div>
+ <div class="d-flex  flex-column">
+     <h4 class="px-2">Aide</h4>
+ </div></span>
+</a>
+
+<a href="#" class="d-flex flex-column  p-1 my-1 col-md-5 col-lg-5 col-sm-12 col-xs-12 mx-1 justify-content-center  " style="box-sizing:border-box;" >
+  <span class="d-flex flex-row btn btcad justify-content-center p-3 my-1 shadow">
+ 
+ <div class="d-flex  flex-column  mx-auto">
+     <h4 class="px-2"><i class="fa fa-bold text-info fa-2x mx-3"></i>Communauté <span class="text-info">B</span>azzard<span class="text-info">d</span>.com</h4>
+ </div></span>
+</a>
+
+      
+        
+        
+        
+      
+    </div>
+    <div class="pt-1 bg-warning"></div>
+    <div class="com-md-12">
+        <div class="text-center">
+            
+            <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+            <div class="modal-content">
+            <div class="modal-header">
+            <div class="avatar d-flex">
+            <img src="./images/illustration/bann1.png" width="100%" alt="Avatar">
+            </div>
+            <h4 class="modal-title d-flex">Avatar</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body" style="overflow: scroll;">
+            <form action="/examples/actions/confirmation.php" method="post">
+            <div class="form-group d-flex m-auto">
+               <!-- <div class="d-flex m-auto">
+                    <img src="./images/illustration/car.png" alt="" srcset="">
+                </div>-->
+           </div>
+           <div class="d-flex col-md-12">Nous sommes ravis de vous rencontrer pour de vrai !</div>
+            
+            <div class="form-group py-3">
+                <div class="input-group ">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
+                      <label class="custom-file-label" for="validatedInputGroupCustomFile">Choisir votre Avatar</label>
+                    </div>
+                    
+                  </div>
+            </div>
+            <div class="d-flex col-md-12">
+                Votre photo ne doit pas être contraire aux bonnes mœurs ou à l'ordre public, ni porter atteinte aux droits de tiers.
+            </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex">
+                    Nous acceptons les formats : jpg, jpeg, png • Poids max : 8 Mo
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+    </div>
+</section>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      
+    </section><!-- End Services Section -->
+
+
+
+      
+
+     
+
+
+
+ 
+  
+
+   <!-- Footer -->
+<footer>
+
+
+ 
+ 
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_logo"><a href="index.html"><img src="images/logo1rr.png"></a></div>
+            <div class="input_bt">
+               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
+               <span class="subscribe_bt" id="basic-addon2"><a href="#">Souscrire</a></span>
+            </div>
+            <div class="footer_menu">
+               <ul>
+                  <li><a href="#">Meilleures Ventes</a></li>
+                           <li><a href="#"> <i class="fa fa-gift px-2"></i> Idée de Cadeaux</a></li>
+                           <li><a href="#">Nouveauté</a></li>
+                           <li><a href="#">Affaire rapide</a></li>
+                           <li><a href="#">Service Client</a></li>
+               </ul>
+            </div>
+            <div class="location_main">Contact Service Client : <a href="#">+1 1800 1200 1200</a></div>
+         </div>
+         <div class="container-fluid px-5 text-center text-md-left pt-4 pt-md-5  d-flex flex-row bg-warning">
+
+            <!-- Grid row -->
+            <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>About me</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <p class="foot-desc mb-0">Here you can use rows and columns to organize your footer content. Lorem
+                  ipsum dolor sit amet,
+                  consectetur
+                  adipisicing elit.</p>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>Products</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <ul class="list-unstyled foot-desc">
+                  <li class="mb-2">
+                    <a href="#!">MDBootstrap</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">MDWordPress</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">BrandFlow</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Bootstrap Angular</a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>Useful links</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <ul class="list-unstyled foot-desc">
+                  <li class="mb-2">
+                    <a href="#!">Your Account</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Become an Affiliate</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Shipping Rates</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Help</a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>Contacts</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <ul class="fa-ul foot-desc ml-4">
+                  <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>New York, Avenue Street 10
+                  </li>
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>042 876 836 908</li>
+                  <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>company@example.com</li>
+                  <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Friday: 10-17</li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row -->
+        
+          </div>
+      </div>
+      
+      
+      
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">© 2021 All Rights Reserved. Design by <a href="https://digit-consulting">Digit-Consulting-Sarl</a></p>
+         </div>
+      </div>
+
+   </footer>
+   <!-- Footer -->
+      <!-- copyright section end -->
+      <!-- Javascript files
+       <div class="row p-2 ">
+                     <div class=" d-flex flex-row justify-content-between">
+                        <form name="toDoList">
+                           <input class="form-control" type="text" name="ListItem" id="seloc"/>
+                        </form>
+                        <div class="btn btn-warning" id="button">Add</div></div>
+                        <ol id="listdo">
+                           
+                        </ol>
+
+                     </div>-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/popover.main.js"></script>
+      
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <script>
+         
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         $(document).ready(
+          $(document).on('input', '#slider', function() {
+            $('#slider_value').html( $(this).val() );
+         })
+         );
+
+         $(document).ready(
+          $(document).on('input', '#locaa', function() {
+            $('#seloc').html( $(this).val() );
+         })
+         );
+
+
+
+         /*************************/
+         $(document).ready(function(){
+            //-- Click on detail
+            $("ul.menu-items > li").on("click",function(){
+                $("ul.menu-items > li").removeClass("active");
+                $(this).addClass("active");
+            })
+
+            $(".attr,.attr2").on("click",function(){
+                var clase = $(this).attr("class");
+
+                $("." + clase).removeClass("active");
+                $(this).addClass("active");
+            })
+
+        }) ;
+
+        
+
+        
+      </script>
+   </body>
+</html>

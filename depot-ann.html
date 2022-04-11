@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>bazardd.com User front</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+      <!--  -->
+      <style>
+         .inp{
+            outline: none;
+            border: 1px gray solid;
+         }
+      </style>
+      <!-- owl stylesheets -->
+      <link rel="stylesheet" href="css/card-item.css">
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/cart-style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+      <link rel="stylesheet" href="./css/mapi.css" media="screen">
+      <script src="./js/mapi.js"></script>
+
+   </head>
+   <body>
+
+  <!-- Close Top Nav -->
+      <!-- banner bg main start -->
+      <div class="banner_bg_main pb-5">
+        
+         <!-- logo section start -->
+         <div class="logo_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="logo"><a href="index.html"><img src="images/lobon.PNG"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- logo section end -->
+         <!-- header section start -->
+         <div class="header_section">
+            <div class="container">
+               <div class="containt_main">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="index.html"> <i class="fa fa-home pr-2"></i> Home</a>
+                     <a href="notif.html"> <i class="fa fa-bell pr-2"></i>Notifications</a>
+                     <a href="search.html"> <i class="fa fa-search pr-2"></i>Mes Recherches</a>
+                     <a href="favs.html"><i class="fa fa-heart pr-2"></i>Favoris</a>
+                     <a href="messages.html"><i class="fa fa-inbox pr-2"></i>Messages</a>
+                     <a href="connecxion.html"><i class="fa fa-user-circle pr-2"></i>Se Connecter</a>
+                     <a href="depot-ann.html"> <i class="fa fa-upload pr-2"></i>Déposer une annonce</a>
+                     <a href="fashion.html">Fashion</a>
+                     <a href="electronic.html">Electronic</a>
+                     <a href="jewellery.html">Jewellery</a>
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+                  <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Toutes les catégories
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                  </div>
+                  <div class="main">
+                     <!-- Another variation with a button -->
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Recherchez quelque chose">
+                        <div class="input-group-append">
+                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                           <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header_box">
+                     <div class="lang_box ">
+                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true" >
+                           <img src="images/flag-france.png" class="mr-2" alt="flag">
+                           Français
+                           </a>
+                        
+                        <div class="dropdown-menu ">
+                           <a href="#" class="dropdown-item" >
+                              <img src="images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                              </a>
+                           
+                        </div>
+                     </div>
+                     <div class="login_menu">
+                        <ul>
+                           <li><a href="./details.html">
+                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              <span class="padding_10">Votre panier</span></a>
+                           </li>
+                           <li><a href="mb.html">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <span class="padding_10">Profil</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header section end -->
+       
+      </div>
+      <div class="" style="clear: both; "></div>
+     <!-- <section class="container rounded border border-warning shadow-sm my-5 alert-warning " style="border-width: 3px!important;" id="filtro">
+        
+      </section>
+       banner bg main end -->
+      
+      <!-- fashion section end -->
+      <!-- electronic section start -->
+    
+      <div class="" style="clear: both;"></div>
+      
+      <div class="container">
+          <div class="row">
+            <div class="row w-100 ">
+                <div class="col-md-8 shadow rounded mx-auto justify-content-around  d-flex p-2 m-3 border border-warning alert-danger">
+                   <div class="col-lg-12 d-flex flex-column">
+                      <h1 class=" mx-auto" >Bonjour!</h1 >
+                      <p class="my-0 py-1 mx-auto text-dark">
+                         Connectez-vous ou créer un compte pour déposer votre annonce.
+                    </p>
+                      <div class="d-flex justify-content-around  my-2 w-75 mx-auto">
+                         <a href="login.html" class="btn btn-secondary btn-sm"><i class="fa fa-home text-warning"></i> Me Connecter</a>
+                         <a href="register.html" class="btn btn-warning btn-sm">Créer un Compte</a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+      </div>
+      <!-- jewellery  section end -->
+      <div class="container m-auto w-100 ">
+         
+         <form>
+            <div class="row d-flex justify-content-around p-4 w-75 my-4 shadow mx-auto alert-warning" >
+               <legend class="col-lg-12 alert-dark p-2 ">Déposer une annonce</legend>
+              <div class="col-lg-6 my-2">
+                <input type="text" class="form-contro py-1 px-3 w-100 rounded inp text-primary " placeholder="Titre">
+              </div>
+              
+              
+              <div class="col-lg-6 my-2">
+               <select id="" class="form-contro inp w-100 py-2 px-3 rounded btn-outline-dark">
+                 <option class="bg-light" selected>Type de transactions</option>
+                 <option>Achat</option>
+                 <option>Vente</option>
+               </select>
+              </div>
+              <div class="col-lg-6 my-2">
+               <select id="" class="form-contro inp w-100 py-2 px-3 rounded">
+                 <option class="bg-light" selected>Catégorie</option>
+                 <option>...</option>
+               </select>
+              </div>
+              <div class="col-lg-6 my-2">
+               <select id="" class="form-contro inp w-100 py-2 px-3 rounded">
+                 <option selected>Sous-Catégorie</option>
+                 <option>...</option>
+               </select>
+              </div>
+              <div class="col-lg-12 my-2">
+               <select id="" class="form-contro inp w-100 py-2 px-3 rounded text-warning">
+                 <option selected >Etat du produit.</option>
+                 <option>Neuf </option>
+                 <option>Très bon état</option>
+                 <option>Mauvais état</option>
+               </select>
+               <a class="text-info  my-3" data-toggle="modal" data-target=".bd-example-modal-lg" href="">Guide des états</a>
+               
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                     <div class="modal-content">
+
+                        <div class="modal-content">
+                           <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalCenterTitle">Guide de l'état du bien.</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                             </button>
+                           </div>
+                           <div class="modal-body">
+                             <div class="container">
+                                <div class="row d-flex flex-column">
+                                   <strong class="text-primary my-2">Etat Neuf</strong>
+                                   <div class="d-flex text-dark alert-dark p-2">
+                                    Bien non-utilisé, complet, avec emballage non ouvert et notice(s) d’utilisation.
+                                   </div>
+
+                                </div>
+                                <div class="row d-flex flex-column">
+                                   <strong class="text-primary my-2">Très bon état</strong>
+                                   <div class="d-flex text-dark alert-dark p-2">
+                                    Bien pas ou peu utilisé, sans aucun défaut ni rayure, complet et en parfait état de fonctionnement.
+                                   </div>
+
+                                </div>
+                                <div class="row d-flex flex-column">
+                                   <strong class="text-primary my-2">Bon état</strong>
+                                   <div class="d-flex text-dark alert-dark p-2">
+                                    Bien en parfait état de fonctionnement, comportant quelques petits défauts (mentionnés dans l’annonce et visibles sur les photos).
+                                   </div>
+
+                                </div>
+                                <div class="row d-flex flex-column">
+                                   <strong class="text-primary my-2">Etat satisfaisant</strong>
+                                   <div class="d-flex text-dark alert-dark p-2">
+                                    Bien en état de fonctionnement correct, comportant des défauts et signes d’usure manifestes (mentionnés dans l’annonce et visibles sur les photos).
+                                 </div>
+
+                                </div>
+                                <div class="row d-flex flex-column">
+                                   <strong class="text-primary my-2">Pour piece</strong>
+                                   <div class="d-flex text-dark alert-dark p-2">
+                                    Bien non fonctionnel, pour restauration complète ou récupération de pièces détachées.
+                                 </div>
+
+                                </div>
+                             </div>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                     </div>
+                  </div>
+                  </div>
+
+              </div>
+              <div class="col-lg-12 my-1">
+                 <textarea class="form-contro d-flex w-100 rounded inp " id="textarr" placeholder="Description de l'annonce" name="" id="" cols="10" rows="3" min="0" max="4000" ></textarea>
+                 <div id="arcont" class="d-flex"><span id="cont">0</span>/4000 caractères</div>
+                 
+                 <div class="d-flex  text-info m-auto px-4" style="font-size: 10px; ">
+                  Nous vous rappelons que la vente de contrefaçons est interdite. Mentionnez bien dans votre annonce que votre produit est un original.
+
+                  Indiquez dans le texte de l’annonce si vous proposez un droit de rétractation à l’acheteur. En l’absence de toute mention, l’acheteur n’en bénéficiera pas et ne pourra pas demander le remboursement ou l’échange du bien ou service proposé.
+                 </div>
+              </div>
+              <div class="col-lg-6 my-1">
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="r4" value="option1" onclick="Checkradiobutton()">
+                  <label class="form-check-label" for="inlineRadio1">Fixer un montant</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="r3" value="option2" onclick="Checkradiobutton()">
+                  <label class="form-check-label" for="inlineRadio2">Faire un dons</label>
+                </div>
+                
+              </div>
+              <div class="col-lg-6 my-1 d-flex flex-row">
+                <input type="number" class="form-contro py-1 px-3 w-100 rounded inp " id="otherPosition" placeholder="Montant" ><span class="align-self-center p-1">$</span>
+              </div>
+              <div class="col-lg-12 my-2">
+               <select id="" class="form-contro inp w-100 py-2 px-3 rounded">
+                 <option class="bg-light" selected>Mode de livraison</option>
+                 <option>...</option>
+               </select>
+              </div>
+              <div class="col-lg-12 mx-auto my-2 align-self-center">
+               <label class="form-check-label" for="slider">Poid du colis</label>
+               <span class="d-block w-100 ">
+                  <input type="range" class="size1 w-100 align-self-center bg-danger" id="slider"  value="5" min="0" max="10000" step="1" />
+                  <span id="slider_value" class="px-2 align-self-center  ">0</span>g</span>
+                  <span id="supo-"></span>
+                  
+            </div>
+            
+                
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+               <div class="col-lg-3 my-1 d-flex flex-row">
+                  <input type="file" class="form-contro py-1 px-3 w-100 rounded inp " id="" placeholder="photo Descriptive" >
+                </div> 
+                <div class="d-flex w-100 ">
+                  <div class="col-md-12 mt-3">
+                     <label for="validationServer01 my-2">Localisation. <span class="text-danger size1">(Votre localisation ne sera pas affichée sur l'annonce)</span></label>
+                     <input type="text" class="form-contro py-1 px-3 w-100 rounded inp text-danger mb-1 " id="" placeholder="Localisation" >
+                
+                     <!--Google map-->
+                     <div id="map-container-google-9" style="overflow: hidden;" class="z-depth-1-half map-container-5 w-100 mx-auto " style="height: 300px; width: 100%;">
+                       <iframe src="https://maps.google.com/maps?q=Madryt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                       style="border:0; width: 100% ; height: 400px;" class="mx-auto" allowfullscreen></iframe>
+                   </div>
+                 </div>
+                </div>
+                  <div class="col-lg-12 h5 p-2 text-primary alert-dark my-0" style="border-radius: 5px 5px 0 0;">
+                     Vos coordonées personnelles
+                  </div>
+                  <hr class="pt-1 bg-dark w-100 my-0">
+                <div class="col-lg-6 my-2">
+                   <label for="">Nom</label>
+                  <input type="text" name="" class="form-contro inp w-100 py-2 px-3 rounded text-success" id="">
+                 </div>
+                <div class="col-lg-6 my-2">
+                   <label for="">Prénom</label>
+                  <input type="text" name="" class="form-contro inp w-100 py-2 px-3 rounded text-success" id="">
+                 </div>
+                 
+                  <div class="text-info col-lg-12">Vos nom & prénom  n'apparaitrons pas sur votre annonce.</div>
+                  <div class="col-lg-6 my-2">
+                     <label for="">Email</label>
+                    <input type="email" name="" class="form-contro inp w-100 py-2 px-3 rounded text-success" id="">
+                   </div>
+                  <div class="col-lg-6 my-2">
+                     <label for="">Téléphone</label>
+                    <input type="tel" name="" class="form-contro inp w-100 py-2 px-3 rounded text-success" id="">
+                   </div>
+                   <div class="col-lg-12 d-flex justify-content-around alert-dark rounded p-2">
+                      <span class="">
+                        <span class=""> Masquer mon numéro</span>
+                        <input type="checkbox" name="" class="" id="">
+                      </span>
+                      <span class="">
+                        <span class=""> Refuser tout démarcharge commercial</span>
+                        <input type="checkbox" name="" class="" id="">
+                      </span>
+                   
+
+                   </div>
+                   <div class="col-lg-12 my-1">
+                     En validant la diffusion de mon annonce, j’accepte les <a href="" class="text-info"> conditions générales d’utilisation</a> et les règles de diffusion du site <a href="index.html" class="text-success">bazardd.com</a> et j’autorise <a href="index.html" class="text-success">bazardd.com</a> à diffuser mon annonce.
+                   </div>
+                   <div class="col-lg-12 my-3 size1 text-warning">
+                     Si vous agissez à titre professionnel, vous devez créer un Compte professionnel. A défaut, en application de l’article L 132-2 du Code de la consommation qui sanctionne les pratiques commerciales trompeuses, vous encourez notamment une peine d’emprisonnement de 2 ans et une amende de 300 000 euros. Pour plus d’informations, consultez vos droits et obligations.
+ 
+                  </div>
+                   <a class="col-lg-12 my-3 size1 alert-warning">
+                     Me renseigner sur les finalités du traitement de mes données personnelles, les destinataires, le responsable de traitement, les durées de conservation, les coordonnées du DPO et mes droits.
+                  </a>
+                  <div class="col-lg-12 my-2">
+                   <a href="optionboost.html" class="btn btn-info"> Option boostage.</a>
+                  </div>
+                  <div class="col-lg-6 my-2">
+                    <input type="submit" name="" class="form-control btn btn-success" placeholder="Déposer l'annonce" value="Déposer l'annonce" id="">
+                   </div>
+                
+                   
+
+            </div>
+            
+            
+                       
+
+
+            </div>
+          </form>
+         
+         
+      </div>
+
+      
+
+     
+
+
+
+   <!-- Footer Links -->
+   
+  
+
+   <!-- Footer -->
+<footer>
+
+
+ 
+ 
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_logo"><a href="index.html"><img src="images/logo1rr.png"></a></div>
+            <div class="input_bt">
+               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
+               <span class="subscribe_bt" id="basic-addon2"><a href="#">Souscrire</a></span>
+            </div>
+            <div class="footer_menu">
+               <ul>
+                  <li><a href="#">Meilleures Ventes</a></li>
+                           <li><a href="#"> <i class="fa fa-gift px-2"></i> Idée de Cadeaux</a></li>
+                           <li><a href="#">Nouveauté</a></li>
+                           <li><a href="#">Affaire rapide</a></li>
+                           <li><a href="#">Service Client</a></li>
+               </ul>
+            </div>
+            <div class="location_main">Contact Service Client : <a href="#">+1 1800 1200 1200</a></div>
+         </div>
+         <div class="container-fluid px-5 text-center text-md-left pt-4 pt-md-5  d-flex flex-row bg-warning">
+
+            <!-- Grid row -->
+            <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>About me</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <p class="foot-desc mb-0">Here you can use rows and columns to organize your footer content. Lorem
+                  ipsum dolor sit amet,
+                  consectetur
+                  adipisicing elit.</p>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>Products</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <ul class="list-unstyled foot-desc">
+                  <li class="mb-2">
+                    <a href="#!">MDBootstrap</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">MDWordPress</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">BrandFlow</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Bootstrap Angular</a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>Useful links</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <ul class="list-unstyled foot-desc">
+                  <li class="mb-2">
+                    <a href="#!">Your Account</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Become an Affiliate</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Shipping Rates</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!">Help</a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+        
+                <!-- Links -->
+                <h5>Contacts</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <ul class="fa-ul foot-desc ml-4">
+                  <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>New York, Avenue Street 10
+                  </li>
+                  <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>042 876 836 908</li>
+                  <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>company@example.com</li>
+                  <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Friday: 10-17</li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row -->
+        
+          </div>
+      </div>
+      
+      
+      
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">© 2021 All Rights Reserved. Design by <a href="https://digit-consulting">Digit-Consulting-Sarl</a></p>
+         </div>
+      </div>
+
+   </footer>
+   <!-- Footer -->
+      <!-- copyright section end -->
+      <!-- Javascript files
+       <div class="row p-2 ">
+                     <div class=" d-flex flex-row justify-content-between">
+                        <form name="toDoList">
+                           <input class="form-control" type="text" name="ListItem" id="seloc"/>
+                        </form>
+                        <div class="btn btn-warning" id="button">Add</div></div>
+                        <ol id="listdo">
+                           
+                        </ol>
+
+                     </div>-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/popover.main.js"></script>
+      
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places&v=weekly"
+async
+></script>
+      <script>
+         
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+         $(document).ready(
+          $(document).on('input', '#slider', function() {
+            $('#slider_value').html( $(this).val() );
+         })
+         );
+
+         $(document).ready(
+          $(document).on('input', '#locaa', function() {
+            $('#seloc').html( $(this).val() );
+         })
+         );
+
+
+
+         /*************************/
+         $(document).ready(function(){
+            //-- Click on detail
+            $("ul.menu-items > li").on("click",function(){
+                $("ul.menu-items > li").removeClass("active");
+                $(this).addClass("active");
+            })
+
+            $(".attr,.attr2").on("click",function(){
+                var clase = $(this).attr("class");
+
+                $("." + clase).removeClass("active");
+                $(this).addClass("active");
+            })
+
+        }) ;
+
+        
+
+        
+      </script>
+       
+     <script >
+
+        var tar = document.getElementById('textarr');
+       // tar.addEventListener("keypress", );
+       // console.log(tar.length);
+        
+
+        tar.addEventListener("keypress", myFunction);
+
+         function myFunction() {
+            var res  = document.getElementById('cont');
+               res.innerHTML=tar.value.length;
+         }
+     </script>
+     <script>
+      function Checkradiobutton()
+         {
+            if(document.getElementById('r3').checked)
+            {
+               document.getElementById('otherPosition').disabled=true; 
+            }else{
+            document.getElementById('otherPosition').disabled = false;
+                  }
+         }
+   </script>
+   <script>
+      var te = document.getElementById('slider');
+      te.addEventListener('input',function test() {
+         var supo = document.getElementById('supo');
+         //supo.innerHTML= te.value;
+         
+         switch (te.value) {
+            case te.value >100 && te.value <500:
+               supo.innerHTML= '<span class="text-success">('+te.value +') de 100g à 500g Recommandé</span>';
+               alert('super');
+               break;
+         
+            default:
+               supo.innerHTML= te.value;
+               break;
+         }
+      });
+   </script>
+
+   </body>
+</html>
